@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Devansh Sabharwal
+% Based off of: https://github.com/Devansh-Sabharwal/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}\renewcommand{\baselinestretch}{0.95}
+
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks=true ,colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=green]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{setspace}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.8in}
+\addtolength{\textheight}{2.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Vansh Rana} \\ \vspace{1pt}
+    \small +91 7508807606 $|$ \faEnvelope \hspace{0.1cm} \href{mailto:x@x.com}{\underline{
+  ranavansh611@gmail.com}} $|$ 
+     \href{https://www.linkedin.com/in/vansh-rana-a8b528261?originalSubdomain=in}{\underline{Linkedin}} $|$
+    \href{https://github.com/VanshRana-1004}{\underline{Github }} $|$
+    \href{https://x.com/Rana2K5}{\underline{Twitter}}
+    
+\end{center}
+
+%-----------EDUCATION-----------
+\section{\Large Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Punjabi University Patiala}{\textbf{CGPA 9.35}}
+      {Bachelor of Technology in Computer Science}{Aug 2022 – May 2026}
+
+\resumeSubHeadingListEnd
+%-----------PROJECTS-----------
+\section{\Large Projects}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+           {\large \textbf{Orbitron} $|$ \emph{Video Conferencing with Session Recordings} 
+           $|$    \href{https://github.com/VanshRana-1004/Orbitron}{Github}}{Jun 2025... } 
+\begin{itemize}[leftmargin=0.3in,label={$\bullet$}]
+    
+    \item Engineered a Mediasoup SFU video conferencing platform supporting up to 5 peers per call, enabling seamless join/leave, messaging, and screen sharing in real-time, solving typical first-screen-recording limitations.
+    \item Implemented Socket.IO signaling with UDP/TCP protocols, achieving less than 200ms latency for 5 concurrent users and maintaining 99.9\% uptime during peak usage.
+    \item Designed an FFmpeg-powered recording pipeline with Redis-backed upload queue, processing multiple variable-length clips per session (based on peer join/leave events) and reducing overall upload time by ~50\%, supporting.
+    \item Implemented a client-side system that presents multiple recorded clips from a call as a single seamless video, reducing processing overhead and enabling instant playback without additional merging.
+    \item Using Docker Compose to run a multiservice architecture (mediasoup SFU, FFmpeg, Redis), ensuring 99.9\% uptime and seamless scaling.
+\end{itemize}
+
+    
+    \resumeProjectHeading
+           {\large \textbf{CoSketch} $|$ \emph{Real-Time Collaborative Whiteboard}
+           \href{https://cosketch-78op.onrender.com/}{Live Demo} $|$
+           \href{https://github.com/VanshRana-1004/CoSketch}{Github}}{Feb 2025 – Apr 2025} 
+           \begin{itemize}[label={$\bullet$}]
+
+                \item Built a Excalidraw-style collaborative whiteboard platform using Next.js, WebSockets, and Tailwind CSS.
+                \item Enabled real-time multi-user collaboration with a custom WebSocket-based broadcasting system.
+                \item developed a scalable canvas supporting large teams, adopted by 20+ active users for real-time collaboration.
+                \item Added room-based and authentication permissions for secure team and classroom use.
+                \item Devised and implemented core collaboration tools, drawing, erasing, shape creation, entirely from scratch.
+                \end{itemize}
+                
+
+    
+
+    \resumeProjectHeading
+           {\large \textbf{Second Brain} $|$ \emph{Link Wallet (MERN Stack) }
+           \href{https://secondbrain-app.vercel.app/}{Live Demo}  $|$   \href{https://github.com/VanshRana-1004/Second-Brain}{Github}}{Dec 2024} 
+            \begin{itemize}[label={$\bullet$}]
+               
+                \item {Developed a centralized platform used by 50+ users to store and categorize YouTube videos, tweets, Notion documents, and websites in one location.}
+                \item {Enabled curated link sharing to enhance collaboration and knowledge exchange.}
+                \item {Designed a responsive user interface using React, TypeScript, and Tailwind CSS, achieving a 90\% satisfaction rate based on post-launch surveys and usability testing.}
+                \item {
+                Embedded YouTube videos and X posts directly into the platform, creating a smoother, more interactive user experience.
+                }
+            \end{itemize}
+
+\resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{\Large Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    {\item{
+    \textbf{Languages}{: C/C++, SQL, JavaScript, TypeScript, HTML/CSS} \\
+    \textbf{Frontend}{: React, Zustand, Next.js, TypeScript, Tailwind CSS} \\
+    \textbf{Backend}{: Node.js, Express, MongoDB, PostgreSQL, Prisma} \\
+    \textbf{Developer Tools}{: Git, Docker, VS Code, Postman, Vercel, Cloudinary} \\
+    \textbf{Others}{: WebRtc, Mediasoup SFU, FFmpeg, Data Structures and Algorithms}
+}}
+ \end{itemize}
+
+\section{\Large Achievements}
+\begin{itemize}[leftmargin=0.15in, label={$\bullet$},itemsep=0pt]
+    \item {\textbf{Global rank 1858 }in LeetCode Weekly Contest 429 (22,810 participants)}\\
+    \item {\textbf{Achieved a Knight rating (1900+)} on LeetCode, placing me in the\textbf{ top 5\%} of users globally (Global Standing: 40,474/760,696), {\textbf{Pupil with max rating 1331} on CodeForces, {\textbf{3 star with max rating 1700} on CodeChef
+    \item {\textbf{Solved 1500+ problems} on competitive coding platforms (Codeforces, LeetCode , CodeChef )\textbf{surpassing 99.25 \% of users on LeetCode.} }
+     \item {\textbf{Codeforces handle:} \href{https://codeforces.com/profile/Vansh_Rana}{Vansh-Rana}}
+      {\textbf{  LeetCode profile:} \href{https://leetcode.com/u/Vansh_Rana_611/}{Vansh-Rana-611}}}
+      {\textbf{  CodeChef profile:} \href{https://www.codechef.com/users/vansh_rana}{vansh-rana}}}
+
+ \end{itemize}
+%-------------------------------------------
+\end{document}
