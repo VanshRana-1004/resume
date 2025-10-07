@@ -137,7 +137,8 @@
 
     \resumeProjectHeading
            {\large \textbf{Orbitron} $|$ \emph{Video Conferencing with Session Recordings} 
-           $|$    \href{https://github.com/VanshRana-1004/Orbitron}{Github}}{Jun 2025... } 
+           \href{https://orbitron.live}{Live Demo}
+           $|$    \href{https://github.com/VanshRana-1004/Orbitron}{Github}}{Jun 2025 - Oct 2025 } 
 \begin{itemize}[leftmargin=0.3in,label={$\bullet$}]
     
     \item Engineered a Mediasoup SFU video conferencing platform supporting up to 5 peers per call, enabling seamless join/leave, messaging, and screen sharing in real-time, solving typical first-screen-recording limitations.
