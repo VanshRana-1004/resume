@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Devansh Sabharwal
+% Author : Vansh Rana
 % Based off of: https://github.com/Devansh-Sabharwal/resume
 % License : MIT
 %------------------------
@@ -145,7 +145,6 @@
     \item Implemented Socket.IO signaling with UDP/TCP protocols, achieving less than 200ms latency for 5 concurrent users and maintaining 99.9\% uptime during peak usage.
     \item Designed an FFmpeg-powered recording pipeline with Redis-backed upload queue, processing multiple variable-length clips per session (based on peer join/leave events) and reducing overall upload time by ~50\%, supporting.
     \item Implemented a client-side system that presents multiple recorded clips from a call as a single seamless video, reducing processing overhead and enabling instant playback without additional merging.
-    \item Using Docker Compose to run a multiservice architecture (mediasoup SFU, FFmpeg, Redis), ensuring 99.9\% uptime and seamless scaling.
 \end{itemize}
 
     
